@@ -1,13 +1,11 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-}
 
 h1 {
     color: #333;
+}
+
+.text-big{
+    font-size: 45px;
+    font-weight: 700;
 }
 
 .responsive-img {
@@ -29,3 +27,41 @@ h1 {
         max-width: 100%;
     }
 } 
+
+.card-upload{
+    width: 1000px;
+    border-radius: 15px;
+}
+
+.fz-12{
+    font-size: 12px;
+}
+
+.img-about{
+    margin-top: -100px;
+  }
+  
+  .mt-10{
+    margin-top: 100px;
+  }
+  
+  .bg-primary{
+    background-color: #252e64 !important;
+  }
+  
+  .bg-secondary{
+    background-color: #252e64 !important;
+  }
+
+  .text-small{
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .card-product{
+    border-radius: 25px;
+  }
+  
+.container-custom{
+    padding: 0px 250px !important;
+}
