@@ -77,3 +77,12 @@ h1 {
   justify-content: space-between;
   margin-bottom: 20px;
 }
+
+.input-file{
+  visibility: hidden;
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+}

@@ -43,6 +43,7 @@
       <div class="container mb-5">
       </div>
       <div class="container">
+
         <div class="d-flex justify-content-center">
           <div class="card shadow w-75 mx-auto card-upload">
             <div class="card-body fw-bold">
@@ -51,16 +52,24 @@
                 <div class="container">
                     <div class="row mt-5">
                             <div class="card shadow p-3 mb-1 bg-body-tertiary rounded">
-                                <div class="card-body">
-                                  <button type="button" class="btn btn-danger float-sm-end mx-2">
-                                    Hapus Semua
-                                  </button>
-                                  <button type="button" class="btn btn-primary float-sm-end">
-                                    Unggah File
-                                  </button>
-                                    <div class="container mb-5 mt-5 text-center text-secondary fw-bold">
+                                <div class="card-body" id="dropArea">
+                                  <input 
+                                  type="file"
+                                  class="input-file"
+                                  name="file"
+                                  id="fileInput"/>
+                                  <div class="d-flex justify-content-end m-1">
+                                    <button class="btn btn-primary mx-1">
+                                      Unggah File
+                                    </button>
+                                    <button class="btn btn-danger mx-1">
+                                      Hapus Semua
+                                    </button>
+                                  </div>
+                                  <div id="fileList"></div>
+                                    <div class="container mb-5 mt-5 text-center text-secondary fw-bold" id="title-product">
                                         <h4>Cek Turnitin No-Repository</h4>
-                                        <span>TARIK FILE MU KESINI / KLIK AJA DISINI</span><br>
+                                        <span id="product-desc">TARIK FILE MU KESINI / KLIK AJA DISINI</span><br>
                                           <p>.docx .pdf aja ya</p>
                                     </div>
                                 </div>
@@ -77,6 +86,7 @@
                   <div class="form-check fw-semibold text-secondary">
                     <input
                       class="form-check-input"
+                      name="Kutipan"
                       type="checkbox"
                       value=""
                       id="flexCheckDefault"
@@ -88,6 +98,7 @@
                   <div class="form-check fw-semibold text-secondary">
                     <input
                       class="form-check-input"
+                      name="daftarpustaka"
                       type="checkbox"
                       value=""
                       id="flexCheckDefault"
@@ -99,6 +110,7 @@
                   <div class="form-check fw-semibold text-secondary">
                     <input
                       class="form-check-input"
+                      name="sumber"
                       type="checkbox"
                       value=""
                       id="flexCheckDefault"
@@ -128,6 +140,7 @@
                         class="form-control"
                         aria-describedby="passwordHelpInline"
                         placeholder="62xxxxx"
+                        name="Whatsapp"
                       />
                     </div>
                     <div class="col-auto"></div>
@@ -154,6 +167,7 @@
                     class="form-control"
                     list="datalistOptions"
                     id="exampleDataList"
+                    name="code"
                   />
                   <datalist id="datalistOptions">
                     <option value="San Francisco"></option>
@@ -163,6 +177,9 @@
                     <option value="Chicago"></option>
                   </datalist>
                 </div>
+              </div>
+              <div class="d-flex justify-content-center mt-5">
+                <button type="button" class="btn btn-danger" onclick="cekTurnitin()">Submit</button>
               </div>
             </div>
           </div>
@@ -229,6 +246,7 @@
                   </div>
                 </div>
               </div>
+
         </div>
             <!-- Footer -->
              <footer>
@@ -243,3 +261,7 @@
                 </div>
               </div>
              </footer>
+             <script src="/assets/js/upload.js"></script>
+             <script src="/assets/js/cek-turnitin.js"></script>
+             </body>
+             </html>

@@ -65,7 +65,38 @@ var data_product = [];
         }
         }})})()
 
+// Cek turnitin 
 
+const cekTurnitin = document.getElementById("cek-turnitin");
+var data_input = [];
 
-
+(() => {
+    fetch("http://192.168.18.12:3000/cek-turnitin",{
+        method: "GET",
+    }).then(res => res.json()).then(hasil => {
+        console.log(hasil)
+        data_input = hasil
+        for(let i = 0; i < data_product.length; i++){
+            if(data_input[i].status == "active"){
+                cekTurnitin.innerHTML +=`
+              <div class="col-12 col-xl-6 mb-3">
+                  <div class="card card-product bg-secondary text-light">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-4">
+                          <img src="${data_input[i].foto}" alt="" 
+                          class="img-fluid"/>
+                        </div>
+                        <div class="col-8 mt-3">
+                            <h5 class="fw-bold">${data_input[i].judul}</h5>
+                           ${data_input[i].isi} <br>
+                            <a href="${data_input[i].link}" class="btn btn-primary mt-4">Klik Disini</a>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            `
+        }
+        }})})()
 
