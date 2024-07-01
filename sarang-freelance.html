@@ -11,61 +11,283 @@
       crossorigin="anonymous"
     />
   </head>
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
   <!-- Header -->
   <body>
     <header>
-    <nav class="navbar bg-body-tertiary">
-      <div class="container">
-        <a class="navbar-brand">Turnedin</a>
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Cek Pesanan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Cara Order</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <button type="button" class="btn btn-success">Login</button>
-        </form>
+      <nav class="navbar bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand">Turnedin</a>
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Cek Pesanan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Cara Order</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <button type="button" class="btn btn-success">Login</button>
+          </form>
+        </div>
+      </nav>
+      <div class="w-100 bg-warning py-2">
+        <div class="text-center fw-semibold text-light">
+          <span>Cek Turnitin 24 jam!!!</span>
+        </div>
       </div>
-    </nav>
-    <div class="w-100 bg-warning py-2">
-      <div class="text-center fw-semibold text-light">
-        <span>Cek Turnitin 24 jam!!!</span>
-      </div>
-    </div>
     </header>
 
     <!-- Main -->
     <main>
-      <div class="container mb-5">
-      </div>
-      <div class="container">
-        <div class="d-flex justify-content-center">
-          <div class="card shadow w-75 mx-auto card-upload">
-            <div class="card-body fw-bold">
-                <h5>LIST PROJECT</h5>
-                    <div class="container py-5">
-                <div class="container">
-                    <div class="row mt-5">
-                            <div class="card shadow p-3 mb-1 bg-body-tertiary rounded">
-                                <div class="card-body">
-                                  <button type="button" class="btn btn-danger float-sm-end mx-2">
-                                    Hapus Semua
-                                  </button>
-                                  <button type="button" class="btn btn-primary float-sm-end">
-                                    Unggah File
-                                  </button>
-                                    <div class="container mb-5 mt-5 text-center text-secondary fw-bold">
-                                        <h4>Jasa Translate</h4>
-                                        <span>TARIK FILE MU KESINI / KLIK AJA DISINI</span><br>
-                                          <p>.docx .pdf aja ya</p>
-                                    </div>
-                                </div>
-                            </div>
+      <div class="container mt-4 py-3">
+        <div class="row justify-content-center">
+          <div class="col-12 px-0 px-sm-3">
+            <div class="justify-content-center mx-auto mt-md-4">
+              <div
+                class="card shadow w-100 card-upload px-3 mb-4 py-3 shadow rounded">
+                <div class="row">
+                  <div class="col-12">
+                    <!-- Main section -->
+                    <div class="py-3">
+                      <div class="mb-0">
+                        <h5 class="mb-3">List Project</h5>
+                        <div
+                          class="row align-items-center justify-content-center">
+                          <form
+                            action=""
+                            class="mb-3 col-6 col-md-5 col-lg-7 col-xxl-8 d-flex position-relative"
+                            role="search">
+                            <input
+                              type="search"
+                              class="form-control me-2"
+                              placeholder="cari cuan"/>
+                          </form>
+                          <div class="mb-3 col-6 col-md-3 col-lg-2">
+                            <select
+                              class="form-select"
+                              aria-label="Default select example">
+                              <option value="1" disabled selected>
+                                Urutkan
+                              </option>
+                              <option value="2">Terbaru</option>
+                              <option value="3">Terlama</option>
+                            </select>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-warning text-light mb-3 col-12 col-md-auto col-lg-3 col-xxl-2 text-xxl-center">
+                            Project Saya
+                          </button>
+                        </div>
                       </div>
                     </div>
+
+                    <nav
+                      class="d-flex justify-content-end mt-3 pagination"
+                      aria-label="Page navigation example">
+                      <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link" href="#"><<</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link active" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">4</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">5</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">>></a>
+                        </li>
+                      </ul>
+                    </nav>
+
+                    <!-- job section -->
+                    <!-- Membuat PowerPoint (ppt) -->
+                    <div class="mx-auto mt-md-4">
+                      <div class="shadow px-3 mb-3 p-3 p-sm-4 rounded">
+                        <div
+                          class="row justify-content-between align-items-start">
+                          <div
+                            class="col-12 col-sm-4 col-md-3 col-lg-2 left text-center mb-3 d-none d-md-block">
+                            <img
+                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZMWO6A0Vs3KdkKrjvQj7YylmKcp3gkLMNkba0ZpoJ9hr5kuo9M_5GiVxfMW1LD9KCmY&usqp=CAU"
+                              alt=""
+                              class="img-thumbnail rounded-circle w-50"/>
+                            <div class="d-block mt-2">Pharita</div>
+                          </div>
+
+                          <div class="col-12 col-md-9 col-lg-10 right">
+                            <div class="row">
+                              <div
+                                class="col-12 col-lg-7 ps-0 mb-2 d-flex align-items-center justify-content-between">
+                                <div>
+                                  <h6>Membuat PowerPoint (ppt)</h6>
+                                  <p class="d-block fw-semibold">
+                                    Anggaran Rp 10.000 - Rp 20.000
+                                  </p>
+                                </div>
+                              </div>
+                              <div
+                                class="col-12 col-lg-5 mt-2 mt-lg-0 d-none d-md-block pe-0">
+                                  <div
+                                    class="d-flex gap-1 flex-column flex-sm-row flex-lg-column align-items-sm-center align-items-md-end">
+                                    <h6 class="mb-0 fw-semibold">Belum ada penawaran</h6>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                          <h6 class="fw-normal">1 hari yang lalu</h6>
+                        <button type="button" class="btn btn-primary btn-sm me-md-2">Lihat proyek</button>
+                      </div>
+                      </div>
+                    </div>
+
+                     <!-- Menerapkan Prinsip-prinsip Good Governance di Indonesia-->
+                     <div class="mx-auto mt-md-4">
+                      <div class="shadow px-3 mb-3 p-3 p-sm-4 rounded">
+                        <div
+                          class="row justify-content-between align-items-start">
+                          <div
+                            class="col-12 col-sm-4 col-md-3 col-lg-2 left text-center mb-3 d-none d-md-block">
+                            <img
+                              src="https://studio.mrngroup.co/storage/app/media/Prambors/Editorial%203/jisoo-blackpink-resmi-dirikan-agensi-sendiri-bernama-blissoo-20240222184303.webp?tr=w-600"
+                              alt=""
+                              class="img-thumbnail rounded-circle w-50"/>
+                            <div class="d-block mt-2">Jisoo</div>
+                          </div>
+
+                          <div class="col-12 col-md-9 col-lg-10 right">
+                            <div class="row">
+                              <div
+                                class="col-12 col-lg-7 ps-0 mb-2 d-flex align-items-center justify-content-between">
+                                <div>
+                                  <h6>Menerapkan Prinsip-prinsip Good Governance di Indonesia</h6>
+                                  <p class="d-block fw-semibold">
+                                    Anggaran Rp 20.000 - Rp 50.000
+                                  </p>
+                                </div>
+                              </div>
+                              <div
+                                class="col-12 col-lg-5 mt-2 mt-lg-0 d-none d-md-block pe-0">
+                                  <div
+                                    class="d-flex gap-1 flex-column flex-sm-row flex-lg-column align-items-sm-center align-items-md-end">
+                                    <h6 class="mb-0 fw-semibold">Belum ada penawaran</h6>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                          <h6 class="fw-normal">3 hari yang lalu</h6>
+                        <button type="button" class="btn btn-primary btn-sm me-md-2">Lihat proyek</button>
+                      </div>
+                      </div>
+                    </div>
+
+                     <!-- Menyelesaikan Tugas Sekolah -->
+                     <div class="mx-auto mt-md-4">
+                      <div class="shadow px-3 mb-3 p-3 p-sm-4 rounded">
+                        <div
+                          class="row justify-content-between align-items-start">
+                          <div
+                            class="col-12 col-sm-4 col-md-3 col-lg-2 left text-center mb-3 d-none d-md-block">
+                            <img
+                              src="https://play-lh.googleusercontent.com/ulMAlLTgPLQwx9gCsQgCp2_YUrOep6Nx_s6BWxQhqwxCPMtVQ9EO37vrw6v8qtwtN3c=w240-h480-rw"
+                              alt=""
+                              class="img-thumbnail rounded-circle w-50"/>
+                            <div class="d-block mt-2">Rose</div>
+                          </div>
+
+                          <div class="col-12 col-md-9 col-lg-10 right">
+                            <div class="row">
+                              <div
+                                class="col-12 col-lg-7 ps-0 mb-2 d-flex align-items-center justify-content-between">
+                                <div>
+                                  <h6>Menyelesaikan Tugas Sekolah</h6>
+                                  <p class="d-block fw-semibold">
+                                    Anggaran Rp 5000 - Rp 20.000
+                                  </p>
+                                </div>
+                              </div>
+                              <div
+                                class="col-12 col-lg-5 mt-2 mt-lg-0 d-none d-md-block pe-0">
+                                  <div
+                                    class="d-flex gap-1 flex-column flex-sm-row flex-lg-column align-items-sm-center align-items-md-end">
+                                    <h6 class="mb-0 fw-semibold">Belum ada penawaran</h6>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                          <h6 class="fw-normal">3 hari yang lalu</h6>
+                        <button type="button" class="btn btn-primary btn-sm me-md-2">Lihat proyek</button>
+                      </div>
+                      </div>
+                    </div>
+
+                     <!-- jasa parafrase -->
+                     <div class="mx-auto mt-md-4">
+                      <div class="shadow px-3 mb-3 p-3 p-sm-4 rounded">
+                        <div
+                          class="row justify-content-between align-items-start">
+                          <div
+                            class="col-12 col-sm-4 col-md-3 col-lg-2 left text-center mb-3 d-none d-md-block">
+                            <img
+                              src="https://turnedin.id/images/1717573845856.jpg"
+                              alt=""
+                              class="img-thumbnail rounded-circle w-50"/>
+                            <div class="d-block mt-2">siti ahyeon</div>
+                          </div>
+
+                          <div class="col-12 col-md-9 col-lg-10 right">
+                            <div class="row">
+                              <div
+                                class="col-12 col-lg-7 ps-0 mb-2 d-flex align-items-center justify-content-between">
+                                <div>
+                                  <h6>jasa parafrase</h6>
+                                  <p class="d-block fw-semibold">
+                                    Anggaran Rp 35.000 - Rp 60.000
+                                  </p>
+                                </div>
+                              </div>
+                              <div
+                                class="col-12 col-lg-5 mt-2 mt-lg-0 d-none d-md-block pe-0">
+                                  <div
+                                    class="d-flex gap-1 flex-column flex-sm-row flex-lg-column align-items-sm-center align-items-md-end">
+                                    <h6 class="mb-0 fw-semibold">Belum ada penawaran</h6>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                          <h6 class="fw-normal">5 hari yang lalu</h6>
+                        <button type="button" class="btn btn-primary btn-sm me-md-2">Lihat proyek</button>
+                      </div>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
