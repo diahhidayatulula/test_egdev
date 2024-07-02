@@ -3,8 +3,8 @@ h1 {
 }
 
 .text-big {
-  font-size: 45px;
-  font-weight: 700;
+  font-size: 35px;
+  font-weight: 500;
 }
 
 .responsive-img {
@@ -27,9 +27,14 @@ h1 {
   }
 }
 
+.text-color{
+  background-color:  #ff9500;
+}
+
 .card-upload {
   width: 1000px;
   border-radius: 15px;
+  margin-bottom: 100px;
 }
 
 .fz-12 {
@@ -52,6 +57,16 @@ h1 {
   background-color: #252e64 !important;
 }
 
+.icon-footer{
+  width: 20px;
+  height: 20px;
+ }
+ 
+ .badge-footer{
+ width: max-content;
+ height: 30px;
+ }
+
 .text-small {
   font-size: 17px;
   font-weight: 500;
@@ -70,14 +85,6 @@ h1 {
   border-radius: 15px;
 }
 
- /* Sarang freelance, list project */
-
-.search-bar {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
 .input-file{
   visibility: hidden;
   position: absolute;
@@ -85,4 +92,38 @@ h1 {
 
 .hidden {
   display: none;
+}
+
+ /* Sarang freelance, list project */
+
+.text-primary{
+  color: #252e64 !important;
+}
+
+.btn-primary{
+  background-color: #252e64 !important;
+}
+
+.fst-normal{
+  font-size: small;
+}
+
+.mb-10{
+  margin-bottom: -5px;
+}
+
+.text-judul{
+  font-weight: 100;
+}
+
+.card-title{
+  height: 200px;
+}
+
+.text-product{
+  font-size: small;
+}
+
+.navigasi{
+  margin-right: 10%;
 }

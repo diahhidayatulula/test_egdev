@@ -33,3 +33,4 @@ dropArea.addEventListener('drop', (e) => {
         fileList.appendChild(fileItem);
     }
 });
+

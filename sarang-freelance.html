@@ -1,293 +1,372 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-  </head>
-  <link rel="stylesheet" href="/assets/css/style.css" />
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarang Freelance</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
   <!-- Header -->
-  <body>
-    <header>
-      <nav class="navbar bg-body-tertiary">
-        <div class="container">
-          <a class="navbar-brand">Turnedin</a>
-          <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="#">Cek Pesanan</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="#">Cara Order</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <button type="button" class="btn btn-success">Login</button>
-          </form>
-        </div>
-      </nav>
-      <div class="w-100 bg-warning py-2">
-        <div class="text-center fw-semibold text-light">
-          <span>Cek Turnitin 24 jam!!!</span>
-        </div>
+  <header>
+       <!-- Navbar -->
+       <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="https://turnedin.id/img/logo/1714118413316.png" alt="Logo" width="45" height="24" class="d-inline-block align-text-top ms-5">
+              <span class="fw-bold">Turned In</span>
+            </a>
+            <div class="collapse navbar-collapse justify-content-center align-items-center me-" id="navbarNav">
+              <ul class="navbar-nav text-center">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Cek Pesanan</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Cara Order</a>
+                </li>
+              </ul>
+            </div>
+            <a type="button" class="btn btn-success me-5 py-1" href="/login.html">Login</a>
+          </div>
+        </nav>
+      <!-- Navbar End -->
+
+      <div class="w-100 bg-warning py-3">
+          <div class="text-center text-light">
+              <span>Cek turnitin 24 jam !!!</span>
+          </div>
       </div>
-    </header>
+  </header>
 
-    <!-- Main -->
-    <main>
-      <div class="container mt-4 py-3">
-        <div class="row justify-content-center">
-          <div class="col-12 px-0 px-sm-3">
-            <div class="justify-content-center mx-auto mt-md-4">
-              <div
-                class="card shadow w-100 card-upload px-3 mb-4 py-3 shadow rounded">
+  <!-- main section -->
+  <main>
+    <div class="container mt-5">
+      <div class="card shadow col-12 p-3 mb-5 bg-body-light rounded">
+        <div class="row">
+          <div class="col-12">
+            <h6 class="fw-semi">List Project</h6>
+           
+              <div class="container-fluid align-items-center justify-content-between p-0 mt-3">
                 <div class="row">
-                  <div class="col-12">
-                    <!-- Main section -->
-                    <div class="py-3">
-                      <div class="mb-0">
-                        <h5 class="mb-3">List Project</h5>
-                        <div
-                          class="row align-items-center justify-content-center">
-                          <form
-                            action=""
-                            class="mb-3 col-6 col-md-5 col-lg-7 col-xxl-8 d-flex position-relative"
-                            role="search">
-                            <input
-                              type="search"
-                              class="form-control me-2"
-                              placeholder="cari cuan"/>
-                          </form>
-                          <div class="mb-3 col-6 col-md-3 col-lg-2">
-                            <select
-                              class="form-select"
-                              aria-label="Default select example">
-                              <option value="1" disabled selected>
-                                Urutkan
-                              </option>
-                              <option value="2">Terbaru</option>
-                              <option value="3">Terlama</option>
-                            </select>
-                          </div>
-                          <button
-                            type="button"
-                            class="btn btn-warning text-light mb-3 col-12 col-md-auto col-lg-3 col-xxl-2 text-xxl-center">
-                            Project Saya
-                          </button>
-                        </div>
+                  <div class="col-8">
+                <form class="d-flex flex-grow-1 me-2" role="search">
+                  <input class="form-control me-2 search-bar" type="search" placeholder="Cari cuan" aria-label="Search">
+                </form>
+              </div>
+              <div class="col-2">
+                <select class="form-select select-bar" aria-label="Default select example">
+                  <option selected>Urutkan</option>
+                  <option value="desc">Terbaru</option>
+                  <option value="asc">Terlama</option>
+                </select>
+              </div>
+              <div class="col-2">
+                <button type="button" class="btn btn-warning w-15 me-4 btn">Projek Saya</button>
+              </div>
+              </div>
+                </div>
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination justify-content-end mt-4">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link active btn-primary" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <!--Item 1-->
+                <div class="mx-auto mt-md-4">
+                  <div class="shadow p-3 mb-5 mt-5 bg-body-light rounded">
+                    <div class="row justify-content-between align-items-start">
+                      <div
+                        class="col-12 col-sm-4 col-md-3 col-lg-2 left text-center mb-3 d-none d-md-block">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZMWO6A0Vs3KdkKrjvQj7YylmKcp3gkLMNkba0ZpoJ9hr5kuo9M_5GiVxfMW1LD9KCmY&usqp=CAU" class="img-thumbnail rounded-circle w-50"/>
+                        <div class="d-block mt-2">Pharita</div>
                       </div>
-                    </div>
-
-                    <nav
-                      class="d-flex justify-content-end mt-3 pagination"
-                      aria-label="Page navigation example">
-                      <ul class="pagination">
-                        <li class="page-item">
-                          <a class="page-link" href="#"><<</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link active" href="#">1</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">2</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">3</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">4</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">5</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">>></a>
-                        </li>
-                      </ul>
-                    </nav>
-
-                    <!-- job section -->
-                    <!-- Membuat PowerPoint (ppt) -->
-                    <div class="mx-auto mt-md-4">
-                      <div class="shadow px-3 mb-3 p-3 p-sm-4 rounded">
-                        <div
-                          class="row justify-content-between align-items-start">
+                      <div class="col-12 col-md-9 col-lg-10 right">
+                        <div class="row">
                           <div
-                            class="col-12 col-sm-4 col-md-3 col-lg-2 left text-center mb-3 d-none d-md-block">
-                            <img
-                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZMWO6A0Vs3KdkKrjvQj7YylmKcp3gkLMNkba0ZpoJ9hr5kuo9M_5GiVxfMW1LD9KCmY&usqp=CAU"
-                              alt=""
-                              class="img-thumbnail rounded-circle w-50"/>
-                            <div class="d-block mt-2">Pharita</div>
-                          </div>
-
-                          <div class="col-12 col-md-9 col-lg-10 right">
-                            <div class="row">
-                              <div
-                                class="col-12 col-lg-7 ps-0 mb-2 d-flex align-items-center justify-content-between">
-                                <div>
-                                  <h6>Membuat PowerPoint (ppt)</h6>
-                                  <p class="d-block fw-semibold">
-                                    Anggaran Rp 10.000 - Rp 20.000
-                                  </p>
+                            class="col-12 col-lg-7 ps-0 mb-2 d-flex align-items-center justify-content-between">
+                            <div>
+                              <h6 class="text-primary fw-semi">Pengerjaan Tugas Kuliah</h6>
+                              <p class="d-block fw-semibold">Anggaran Rp 10.000 - Rp 100.000</p>
+                              <p class="fw-normal">Menerima pembuatan makalah, ppt dan lainnya</p>
+                              <span class="badge text-bg-secondary">Makalah</span>
+                              <span class="badge text-bg-secondary">Artikel</span>
+                              <span class="badge text-bg-secondary">PPT</span>
+                              <span class="badge text-bg-secondary">Karya Tulis Ilmiah</span>
+                              <div class="class align-items-start mt-5 fst-normal"> Status:
+                                <span class="badge rounded-pill text-bg-success align-items-start">Open</span>
                                 </div>
-                              </div>
-                              <div
-                                class="col-12 col-lg-5 mt-2 mt-lg-0 d-none d-md-block pe-0">
-                                  <div
-                                    class="d-flex gap-1 flex-column flex-sm-row flex-lg-column align-items-sm-center align-items-md-end">
-                                    <h6 class="mb-0 fw-semibold">Belum ada penawaran</h6>
-                                  </div>
-                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                          <h6 class="fw-normal">1 hari yang lalu</h6>
-                        <button type="button" class="btn btn-primary btn-sm me-md-2">Lihat proyek</button>
-                      </div>
-                      </div>
-                    </div>
-
-                     <!-- Menerapkan Prinsip-prinsip Good Governance di Indonesia-->
-                     <div class="mx-auto mt-md-4">
-                      <div class="shadow px-3 mb-3 p-3 p-sm-4 rounded">
-                        <div
-                          class="row justify-content-between align-items-start">
                           <div
-                            class="col-12 col-sm-4 col-md-3 col-lg-2 left text-center mb-3 d-none d-md-block">
-                            <img
-                              src="https://studio.mrngroup.co/storage/app/media/Prambors/Editorial%203/jisoo-blackpink-resmi-dirikan-agensi-sendiri-bernama-blissoo-20240222184303.webp?tr=w-600"
-                              alt=""
-                              class="img-thumbnail rounded-circle w-50"/>
-                            <div class="d-block mt-2">Jisoo</div>
-                          </div>
-
-                          <div class="col-12 col-md-9 col-lg-10 right">
-                            <div class="row">
+                            class="col-12 col-lg-5 mt-2 mt-lg-0 d-none d-md-block pe-0">
                               <div
-                                class="col-12 col-lg-7 ps-0 mb-2 d-flex align-items-center justify-content-between">
-                                <div>
-                                  <h6>Menerapkan Prinsip-prinsip Good Governance di Indonesia</h6>
-                                  <p class="d-block fw-semibold">
-                                    Anggaran Rp 20.000 - Rp 50.000
-                                  </p>
-                                </div>
+                                class="d-flex gap-1 me-3 flex-column flex-sm-row flex-lg-column align-items-sm-center align-items-md-end">
+                                <h6 class="mb-0 fw-semibold text-primary">Belum ada penawaran</h6>
                               </div>
-                              <div
-                                class="col-12 col-lg-5 mt-2 mt-lg-0 d-none d-md-block pe-0">
-                                  <div
-                                    class="d-flex gap-1 flex-column flex-sm-row flex-lg-column align-items-sm-center align-items-md-end">
-                                    <h6 class="mb-0 fw-semibold">Belum ada penawaran</h6>
-                                  </div>
-                              </div>
-                            </div>
                           </div>
                         </div>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                          <h6 class="fw-normal">3 hari yang lalu</h6>
-                        <button type="button" class="btn btn-primary btn-sm me-md-2">Lihat proyek</button>
-                      </div>
                       </div>
                     </div>
-
-                     <!-- Menyelesaikan Tugas Sekolah -->
-                     <div class="mx-auto mt-md-4">
-                      <div class="shadow px-3 mb-3 p-3 p-sm-4 rounded">
-                        <div
-                          class="row justify-content-between align-items-start">
-                          <div
-                            class="col-12 col-sm-4 col-md-3 col-lg-2 left text-center mb-3 d-none d-md-block">
-                            <img
-                              src="https://play-lh.googleusercontent.com/ulMAlLTgPLQwx9gCsQgCp2_YUrOep6Nx_s6BWxQhqwxCPMtVQ9EO37vrw6v8qtwtN3c=w240-h480-rw"
-                              alt=""
-                              class="img-thumbnail rounded-circle w-50"/>
-                            <div class="d-block mt-2">Rose</div>
-                          </div>
-
-                          <div class="col-12 col-md-9 col-lg-10 right">
-                            <div class="row">
-                              <div
-                                class="col-12 col-lg-7 ps-0 mb-2 d-flex align-items-center justify-content-between">
-                                <div>
-                                  <h6>Menyelesaikan Tugas Sekolah</h6>
-                                  <p class="d-block fw-semibold">
-                                    Anggaran Rp 5000 - Rp 20.000
-                                  </p>
-                                </div>
-                              </div>
-                              <div
-                                class="col-12 col-lg-5 mt-2 mt-lg-0 d-none d-md-block pe-0">
-                                  <div
-                                    class="d-flex gap-1 flex-column flex-sm-row flex-lg-column align-items-sm-center align-items-md-end">
-                                    <h6 class="mb-0 fw-semibold">Belum ada penawaran</h6>
-                                  </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                          <h6 class="fw-normal">3 hari yang lalu</h6>
-                        <button type="button" class="btn btn-primary btn-sm me-md-2">Lihat proyek</button>
-                      </div>
-                      </div>
-                    </div>
-
-                     <!-- jasa parafrase -->
-                     <div class="mx-auto mt-md-4">
-                      <div class="shadow px-3 mb-3 p-3 p-sm-4 rounded">
-                        <div
-                          class="row justify-content-between align-items-start">
-                          <div
-                            class="col-12 col-sm-4 col-md-3 col-lg-2 left text-center mb-3 d-none d-md-block">
-                            <img
-                              src="https://turnedin.id/images/1717573845856.jpg"
-                              alt=""
-                              class="img-thumbnail rounded-circle w-50"/>
-                            <div class="d-block mt-2">siti ahyeon</div>
-                          </div>
-
-                          <div class="col-12 col-md-9 col-lg-10 right">
-                            <div class="row">
-                              <div
-                                class="col-12 col-lg-7 ps-0 mb-2 d-flex align-items-center justify-content-between">
-                                <div>
-                                  <h6>jasa parafrase</h6>
-                                  <p class="d-block fw-semibold">
-                                    Anggaran Rp 35.000 - Rp 60.000
-                                  </p>
-                                </div>
-                              </div>
-                              <div
-                                class="col-12 col-lg-5 mt-2 mt-lg-0 d-none d-md-block pe-0">
-                                  <div
-                                    class="d-flex gap-1 flex-column flex-sm-row flex-lg-column align-items-sm-center align-items-md-end">
-                                    <h6 class="mb-0 fw-semibold">Belum ada penawaran</h6>
-                                  </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                          <h6 class="fw-normal">5 hari yang lalu</h6>
-                        <button type="button" class="btn btn-primary btn-sm me-md-2">Lihat proyek</button>
-                      </div>
-                      </div>
-                    </div>
-
+                    <div class="d-grid gap-2 d-md-flex justify-content-end mb-10">
+                      <h6 class="fst-normal">7 hari yang lalu
+                    <button type="button" class="btn btn-primary btn-sm g-2">Lihat proyek</button></h6>
+                  </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
+                <!--Item 1 END-->
+
+                 <!--Item 2-->
+                 <div class="mx-auto mt-md-4">
+                  <div class="shadow p-3 mb-5 mt-5 bg-body-light rounded">
+                    <div class="row justify-content-between align-items-start">
+                      <div
+                        class="col-12 col-sm-4 col-md-3 col-lg-2 left text-center mb-3 d-none d-md-block">
+                        <img src="https://studio.mrngroup.co/storage/app/media/Prambors/Editorial%203/jisoo-blackpink-resmi-dirikan-agensi-sendiri-bernama-blissoo-20240222184303.webp?tr=w-600" class="img-thumbnail rounded-circle w-50"/>
+                        <div class="d-block mt-2">Jisoo</div>
+                      </div>
+                      <div class="col-12 col-md-9 col-lg-10 right">
+                        <div class="row">
+                          <div
+                            class="col-12 col-lg-7 ps-0 mb-2 d-flex align-items-center justify-content-between">
+                            <div>
+                              <h6 class="text-primary fw-semi">Pembuatan Paper</h6>
+                              <p class="d-block fw-semibold">Anggaran Rp 25.000 - Rp 70.000</p>
+                              <p class="fw-normal">Menerima pembuatan paper lengkap dengan sumbernya</p>
+                              <span class="badge text-bg-secondary">Artikel</span>
+                              <span class="badge text-bg-secondary">Karya Tulis Ilmiah</span>
+                              <div class="class align-items-start mt-5 fst-normal"> Status:
+                                <span class="badge rounded-pill text-bg-success align-items-start">Open</span>
+                                </div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-12 col-lg-5 mt-2 mt-lg-0 d-none d-md-block pe-0">
+                              <div
+                                class="d-flex gap-1 me-3 flex-column flex-sm-row flex-lg-column align-items-sm-center align-items-md-end">
+                                <h6 class="mb-0 fw-semibold text-primary">2 penawaran</h6>
+                                <h6 class="mb-0 fw-light text-primary">Rp. 70.000</h6>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-grid gap-2 d-md-flex justify-content-end mb-10">
+                      <h6 class="fst-normal">2 hari yang lalu
+                    <button type="button" class="btn btn-primary btn-sm g-2">Lihat proyek</button></h6>
+                  </div>
+                  </div>
+                </div>
+                <!--Item 2 END-->
+
+                 <!--Item 3-->
+                 <div class="mx-auto mt-md-4">
+                  <div class="shadow p-3 mb-5 mt-5 bg-body-light rounded">
+                    <div class="row justify-content-between align-items-start">
+                      <div
+                        class="col-12 col-sm-4 col-md-3 col-lg-2 left text-center mb-3 d-none d-md-block">
+                        <img src="https://turnedin.id/images/default.jpeg" class="img-thumbnail rounded-circle w-50"/>
+                        <div class="d-block mt-2">Diah</div>
+                      </div>
+                      <div class="col-12 col-md-9 col-lg-10 right">
+                        <div class="row">
+                          <div
+                            class="col-12 col-lg-7 ps-0 mb-2 d-flex align-items-center justify-content-between">
+                            <div>
+                              <h6 class="text-primary fw-semi">Jasa Pembuatan CV ATS</h6>
+                              <p class="d-block fw-semibold">Anggaran Rp 20.000 - Rp 50.000</p>
+                              <p class="fw-normal">Menerima pembuatan CV ATS Profesional</p>
+                              <span class="badge text-bg-secondary">Resume</span>
+                              <span class="badge text-bg-secondary">CV ATS</span>
+                              <span class="badge text-bg-secondary">Riwayat Hidup</span>
+                              <div class="class align-items-start mt-5 fst-normal"> Status:
+                                <span class="badge rounded-pill text-bg-success align-items-start">Open</span>
+                                </div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-12 col-lg-5 mt-2 mt-lg-0 d-none d-md-block pe-0">
+                              <div
+                                class="d-flex gap-1 me-3 flex-column flex-sm-row flex-lg-column align-items-sm-center align-items-md-end">
+                                <h6 class="mb-0 fw-semibold text-primary">Belum ada penawaran</h6>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-grid gap-2 d-md-flex justify-content-end mb-10">
+                      <h6 class="fst-normal">7 hari yang lalu
+                    <button type="button" class="btn btn-primary btn-sm g-2">Lihat proyek</button></h6>
+                  </div>
+                  </div>
+                </div>
+                <!--Item 3 END-->
+
+                 <!--Item 4-->
+                 <div class="mx-auto mt-md-4">
+                  <div class="shadow p-3 mb-5 mt-5 bg-body-light rounded">
+                    <div class="row justify-content-between align-items-start">
+                      <div
+                        class="col-12 col-sm-4 col-md-3 col-lg-2 left text-center mb-3 d-none d-md-block">
+                        <img src="https://play-lh.googleusercontent.com/ulMAlLTgPLQwx9gCsQgCp2_YUrOep6Nx_s6BWxQhqwxCPMtVQ9EO37vrw6v8qtwtN3c=w240-h480-rw" class="img-thumbnail rounded-circle w-50"/>
+                        <div class="d-block mt-2">rosie</div>
+                      </div>
+                      <div class="col-12 col-md-9 col-lg-10 right">
+                        <div class="row">
+                          <div
+                            class="col-12 col-lg-7 ps-0 mb-2 d-flex align-items-center justify-content-between">
+                            <div>
+                              <h6 class="text-primary fw-semi">Pengerjaan Tugas Kuliah</h6>
+                              <p class="d-block fw-semibold">Anggaran Rp 20.000 - Rp 100.000</p>
+                              <p class="fw-normal">Menerima pembuatan makalah, ppt dan lainnya</p>
+                              <span class="badge text-bg-secondary">Makalah</span>
+                              <span class="badge text-bg-secondary">Artikel</span>
+                              <span class="badge text-bg-secondary">PPT</span>
+                              <span class="badge text-bg-secondary">Karya Tulis Ilmiah</span>
+                              <div class="class align-items-start mt-5 fst-normal"> Status:
+                                <span class="badge rounded-pill text-bg-success align-items-start">Open</span>
+                                </div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-12 col-lg-5 mt-2 mt-lg-0 d-none d-md-block pe-0">
+                              <div
+                                class="d-flex gap-1 me-3 flex-column flex-sm-row flex-lg-column align-items-sm-center align-items-md-end">
+                                <h6 class="mb-0 fw-semibold text-primary">Belum ada penawaran</h6>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-grid gap-2 d-md-flex justify-content-end mb-10">
+                      <h6 class="fst-normal">7 hari yang lalu
+                    <button type="button" class="btn btn-primary btn-sm g-2">Lihat proyek</button></h6>
+                  </div>
+                  </div>
+                </div>
+                <!--Item 4 END-->
+
+                 <!--Item 5-->
+                 <div class="mx-auto mt-md-4">
+                  <div class="shadow p-3 mb-5 mt-5 bg-body-light rounded">
+                    <div class="row justify-content-between align-items-start">
+                      <div
+                        class="col-12 col-sm-4 col-md-3 col-lg-2 left text-center mb-3 d-none d-md-block">
+                        <img src="https://turnedin.id/images/default.jpeg" class="img-thumbnail rounded-circle w-50"/>
+                        <div class="d-block mt-2">Siti jennie</div>
+                      </div>
+                      <div class="col-12 col-md-9 col-lg-10 right">
+                        <div class="row">
+                          <div
+                            class="col-12 col-lg-7 ps-0 mb-2 d-flex align-items-center justify-content-between">
+                            <div>
+                              <h6 class="text-primary fw-semi">Pengerjaan Tugas Kuliah</h6>
+                              <p class="d-block fw-semibold">Anggaran Rp 20.000 - Rp 100.000</p>
+                              <p class="fw-normal">Menerima pembuatan makalah, ppt dan lainnya</p>
+                              <span class="badge text-bg-secondary">Makalah</span>
+                              <span class="badge text-bg-secondary">Artikel</span>
+                              <span class="badge text-bg-secondary">PPT</span>
+                              <span class="badge text-bg-secondary">Karya Tulis Ilmiah</span>
+                              <div class="class align-items-start mt-5 fst-normal"> Status:
+                                <span class="badge rounded-pill text-bg-success align-items-start">Open</span>
+                                </div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-12 col-lg-5 mt-2 mt-lg-0 d-none d-md-block pe-0">
+                              <div
+                                class="d-flex gap-1 me-3 flex-column flex-sm-row flex-lg-column align-items-sm-center align-items-md-end">
+                                <h6 class="mb-0 fw-semibold text-primary">Belum ada penawaran</h6>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-grid gap-2 d-md-flex justify-content-end mb-10">
+                      <h6 class="fst-normal">7 hari yang lalu
+                    <button type="button" class="btn btn-primary btn-sm g-2">Lihat proyek</button></h6>
+                  </div>
+                  </div>
+                </div>
+                <!--Item 5 END-->
+
+                 <!--Item 6-->
+                 <div class="mx-auto mt-md-4">
+                  <div class="shadow p-3 mb-5 mt-5 bg-body-light rounded">
+                    <div class="row justify-content-between align-items-start">
+                      <div
+                        class="col-12 col-sm-4 col-md-3 col-lg-2 left text-center mb-3 d-none d-md-block">
+                        <img src="https://turnedin.id/images/default.jpeg" class="img-thumbnail rounded-circle w-50"/>
+                        <div class="d-block mt-2">Diah</div>
+                      </div>
+                      <div class="col-12 col-md-9 col-lg-10 right">
+                        <div class="row">
+                          <div
+                            class="col-12 col-lg-7 ps-0 mb-2 d-flex align-items-center justify-content-between">
+                            <div>
+                              <h6 class="text-primary fw-semi">Pengerjaan Tugas Kuliah</h6>
+                              <p class="d-block fw-semibold">Anggaran Rp 20.000 - Rp 100.000</p>
+                              <p class="fw-normal">Menerima pembuatan makalah, ppt dan lainnya</p>
+                              <span class="badge text-bg-secondary">Makalah</span>
+                              <span class="badge text-bg-secondary">Artikel</span>
+                              <span class="badge text-bg-secondary">PPT</span>
+                              <span class="badge text-bg-secondary">Karya Tulis Ilmiah</span>
+                              <div class="class align-items-start mt-5 fst-normal"> Status:
+                                <span class="badge rounded-pill text-bg-success align-items-start">Open</span>
+                                </div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-12 col-lg-5 mt-2 mt-lg-0 d-none d-md-block pe-0">
+                              <div
+                                class="d-flex gap-1 me-3 flex-column flex-sm-row flex-lg-column align-items-sm-center align-items-md-end">
+                                <h6 class="mb-0 fw-semibold text-primary">Belum ada penawaran</h6>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-grid gap-2 d-md-flex justify-content-end mb-10">
+                      <h6 class="fst-normal">7 hari yang lalu
+                    <button type="button" class="btn btn-primary btn-sm g-2">Lihat proyek</button></h6>
+                  </div>
+                  </div>
+                </div>
+                <!--Item 6 END-->
         </div>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-end mt-4">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link active btn-primary" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </main>
-  </body>
-</html>
+    </div> 
+    
+  </main>
