@@ -14,18 +14,20 @@
        <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container">
             <a class="navbar-brand" href="#">
-              <img src="https://turnedin.id/img/logo/1714118413316.png" alt="Logo" width="45" height="24" class="d-inline-block align-text-top ms-5">
+              <img src="https://turnedin.id/img/logo/1714118413316.png" alt="Logo" width="45" height="24" class="d-inline-block align-text-top ms-0 ms-xl-5">
               <span class="fw-bold">Turned In</span>
             </a>
             <div class="collapse navbar-collapse justify-content-center align-items-center me-" id="navbarNav">
-              <ul class="navbar-nav text-center">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Cek Pesanan</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Cara Order</a>
-                </li>
-              </ul>
+              <div class="navigasi d-none d-xl-block">
+                <ul class="nav justify-content-center">
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Cek Pesanan</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Cara Order</a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <a type="button" class="btn btn-success me-5 py-1" href="/login.html">Login</a>
           </div>
@@ -42,27 +44,27 @@
   <!-- main section -->
   <main>
     <div class="container mt-5">
-      <div class="card shadow col-12 p-3 mb-5 bg-body-light rounded">
+      <div class="card shadow border-0 col-12 p-3 mb-5 bg-body-light rounded">
         <div class="row">
           <div class="col-12">
             <h6 class="fw-semi">List Project</h6>
            
               <div class="container-fluid align-items-center justify-content-between p-0 mt-3">
                 <div class="row">
-                  <div class="col-8">
-                <form class="d-flex flex-grow-1 me-2" role="search">
+                  <div class="col-6 col-xl-8">
+                <form class="d-flex flex-grow-1" role="search">
                   <input class="form-control me-2 search-bar" type="search" placeholder="Cari cuan" aria-label="Search">
                 </form>
               </div>
-              <div class="col-2">
+              <div class="col-6 col-xl-2">
                 <select class="form-select select-bar" aria-label="Default select example">
                   <option selected>Urutkan</option>
                   <option value="desc">Terbaru</option>
                   <option value="asc">Terlama</option>
                 </select>
               </div>
-              <div class="col-2">
-                <button type="button" class="btn btn-warning w-15 me-4 btn">Projek Saya</button>
+              <div class="col-6 col-xl-2">
+                <button type="button" class="btn btn-warning w-15  btn text-light">Projek Saya</button>
               </div>
               </div>
                 </div>
@@ -87,10 +89,10 @@
                 </nav>
                 <!--Item 1-->
                 <div class="mx-auto mt-md-4">
-                  <div class="shadow p-3 mb-5 mt-5 bg-body-light rounded">
+                  <div class="shadow p-4 mb-5 mt-5 bg-body-light rounded">
                     <div class="row justify-content-between align-items-start">
                       <div
-                        class="col-12 col-sm-4 col-md-3 col-lg-2 left text-center mb-3 d-none d-md-block">
+                        class="col-12 col-sm-4 col-md-3 col-lg-2 left text-center mb-3 d-none d-xl-block">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZMWO6A0Vs3KdkKrjvQj7YylmKcp3gkLMNkba0ZpoJ9hr5kuo9M_5GiVxfMW1LD9KCmY&usqp=CAU" class="img-thumbnail rounded-circle w-50"/>
                         <div class="d-block mt-2">Pharita</div>
                       </div>
@@ -106,8 +108,9 @@
                               <span class="badge text-bg-secondary">Artikel</span>
                               <span class="badge text-bg-secondary">PPT</span>
                               <span class="badge text-bg-secondary">Karya Tulis Ilmiah</span>
-                              <div class="class align-items-start mt-5 fst-normal"> Status:
-                                <span class="badge rounded-pill text-bg-success align-items-start">Open</span>
+                              <div class="class d-flex justify-content-between align-items-start mt-5 fst-normal"> 
+                                <div>Status: <span class="badge rounded-pill text-bg-success align-items-start">Open</span></div>
+                                <h6 class="fst-normal d-block d-xl-none">7 hari yang lalu</h6>
                                 </div>
                             </div>
                           </div>
@@ -121,9 +124,16 @@
                         </div>
                       </div>
                     </div>
-                    <div class="d-grid gap-2 d-md-flex justify-content-end mb-10">
-                      <h6 class="fst-normal">7 hari yang lalu
-                    <button type="button" class="btn btn-primary btn-sm g-2">Lihat proyek</button></h6>
+                    <div class="d-flex align-items-center border-bebas  pt-3">
+                      <div
+                        class=" mb-3 d-flex d-xl-none align-items-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZMWO6A0Vs3KdkKrjvQj7YylmKcp3gkLMNkba0ZpoJ9hr5kuo9M_5GiVxfMW1LD9KCmY&usqp=CAU" class="img-thumbnail rounded-circle w-25"/>
+                        <div class="d-block mt-2 ms-1">Pharita</div>
+                      </div>
+                    <div class="d-flex w-100 d-md-flex align-items-center justify-content-end mb-10">
+                      <h6 class="fst-normal d-none d-xl-block me-1">7 hari yang lalu</h6>
+                    <button type="button" class="btn btn-primary btn-sm g-2">Lihat proyek</button>
+                  </div>
                   </div>
                   </div>
                 </div>
@@ -131,25 +141,28 @@
 
                  <!--Item 2-->
                  <div class="mx-auto mt-md-4">
-                  <div class="shadow p-3 mb-5 mt-5 bg-body-light rounded">
+                  <div class="shadow p-4 mb-5 mt-5 bg-body-light rounded">
                     <div class="row justify-content-between align-items-start">
                       <div
-                        class="col-12 col-sm-4 col-md-3 col-lg-2 left text-center mb-3 d-none d-md-block">
-                        <img src="https://studio.mrngroup.co/storage/app/media/Prambors/Editorial%203/jisoo-blackpink-resmi-dirikan-agensi-sendiri-bernama-blissoo-20240222184303.webp?tr=w-600" class="img-thumbnail rounded-circle w-50"/>
-                        <div class="d-block mt-2">Jisoo</div>
+                        class="col-12 col-sm-4 col-md-3 col-lg-2 left text-center mb-3 d-none d-xl-block">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZMWO6A0Vs3KdkKrjvQj7YylmKcp3gkLMNkba0ZpoJ9hr5kuo9M_5GiVxfMW1LD9KCmY&usqp=CAU" class="img-thumbnail rounded-circle w-50"/>
+                        <div class="d-block mt-2">Pharita</div>
                       </div>
                       <div class="col-12 col-md-9 col-lg-10 right">
                         <div class="row">
                           <div
                             class="col-12 col-lg-7 ps-0 mb-2 d-flex align-items-center justify-content-between">
                             <div>
-                              <h6 class="text-primary fw-semi">Pembuatan Paper</h6>
-                              <p class="d-block fw-semibold">Anggaran Rp 25.000 - Rp 70.000</p>
-                              <p class="fw-normal">Menerima pembuatan paper lengkap dengan sumbernya</p>
+                              <h6 class="text-primary fw-semi">Pengerjaan Tugas Kuliah</h6>
+                              <p class="d-block fw-semibold">Anggaran Rp 10.000 - Rp 100.000</p>
+                              <p class="fw-normal">Menerima pembuatan makalah, ppt dan lainnya</p>
+                              <span class="badge text-bg-secondary">Makalah</span>
                               <span class="badge text-bg-secondary">Artikel</span>
+                              <span class="badge text-bg-secondary">PPT</span>
                               <span class="badge text-bg-secondary">Karya Tulis Ilmiah</span>
-                              <div class="class align-items-start mt-5 fst-normal"> Status:
-                                <span class="badge rounded-pill text-bg-success align-items-start">Open</span>
+                              <div class="class d-flex justify-content-between align-items-start mt-5 fst-normal"> 
+                                <div>Status: <span class="badge rounded-pill text-bg-success align-items-start">Open</span></div>
+                                <h6 class="fst-normal d-block d-xl-none">7 hari yang lalu</h6>
                                 </div>
                             </div>
                           </div>
@@ -157,16 +170,22 @@
                             class="col-12 col-lg-5 mt-2 mt-lg-0 d-none d-md-block pe-0">
                               <div
                                 class="d-flex gap-1 me-3 flex-column flex-sm-row flex-lg-column align-items-sm-center align-items-md-end">
-                                <h6 class="mb-0 fw-semibold text-primary">2 penawaran</h6>
-                                <h6 class="mb-0 fw-light text-primary">Rp. 70.000</h6>
+                                <h6 class="mb-0 fw-semibold text-primary">Belum ada penawaran</h6>
                               </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="d-grid gap-2 d-md-flex justify-content-end mb-10">
-                      <h6 class="fst-normal">2 hari yang lalu
-                    <button type="button" class="btn btn-primary btn-sm g-2">Lihat proyek</button></h6>
+                    <div class="d-flex align-items-center border-bebas  pt-3">
+                      <div
+                        class=" mb-3 d-flex d-xl-none align-items-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZMWO6A0Vs3KdkKrjvQj7YylmKcp3gkLMNkba0ZpoJ9hr5kuo9M_5GiVxfMW1LD9KCmY&usqp=CAU" class="img-thumbnail rounded-circle w-25"/>
+                        <div class="d-block mt-2 ms-1">Pharita</div>
+                      </div>
+                    <div class="d-flex w-100 d-md-flex align-items-center justify-content-end mb-10">
+                      <h6 class="fst-normal d-none d-xl-block me-1">7 hari yang lalu</h6>
+                    <button type="button" class="btn btn-primary btn-sm g-2">Lihat proyek</button>
+                  </div>
                   </div>
                   </div>
                 </div>
@@ -174,26 +193,28 @@
 
                  <!--Item 3-->
                  <div class="mx-auto mt-md-4">
-                  <div class="shadow p-3 mb-5 mt-5 bg-body-light rounded">
+                  <div class="shadow p-4 mb-5 mt-5 bg-body-light rounded">
                     <div class="row justify-content-between align-items-start">
                       <div
-                        class="col-12 col-sm-4 col-md-3 col-lg-2 left text-center mb-3 d-none d-md-block">
-                        <img src="https://turnedin.id/images/default.jpeg" class="img-thumbnail rounded-circle w-50"/>
-                        <div class="d-block mt-2">Diah</div>
+                        class="col-12 col-sm-4 col-md-3 col-lg-2 left text-center mb-3 d-none d-xl-block">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZMWO6A0Vs3KdkKrjvQj7YylmKcp3gkLMNkba0ZpoJ9hr5kuo9M_5GiVxfMW1LD9KCmY&usqp=CAU" class="img-thumbnail rounded-circle w-50"/>
+                        <div class="d-block mt-2">Pharita</div>
                       </div>
                       <div class="col-12 col-md-9 col-lg-10 right">
                         <div class="row">
                           <div
                             class="col-12 col-lg-7 ps-0 mb-2 d-flex align-items-center justify-content-between">
                             <div>
-                              <h6 class="text-primary fw-semi">Jasa Pembuatan CV ATS</h6>
-                              <p class="d-block fw-semibold">Anggaran Rp 20.000 - Rp 50.000</p>
-                              <p class="fw-normal">Menerima pembuatan CV ATS Profesional</p>
-                              <span class="badge text-bg-secondary">Resume</span>
-                              <span class="badge text-bg-secondary">CV ATS</span>
-                              <span class="badge text-bg-secondary">Riwayat Hidup</span>
-                              <div class="class align-items-start mt-5 fst-normal"> Status:
-                                <span class="badge rounded-pill text-bg-success align-items-start">Open</span>
+                              <h6 class="text-primary fw-semi">Pengerjaan Tugas Kuliah</h6>
+                              <p class="d-block fw-semibold">Anggaran Rp 10.000 - Rp 100.000</p>
+                              <p class="fw-normal">Menerima pembuatan makalah, ppt dan lainnya</p>
+                              <span class="badge text-bg-secondary">Makalah</span>
+                              <span class="badge text-bg-secondary">Artikel</span>
+                              <span class="badge text-bg-secondary">PPT</span>
+                              <span class="badge text-bg-secondary">Karya Tulis Ilmiah</span>
+                              <div class="class d-flex justify-content-between align-items-start mt-5 fst-normal"> 
+                                <div>Status: <span class="badge rounded-pill text-bg-success align-items-start">Open</span></div>
+                                <h6 class="fst-normal d-block d-xl-none">7 hari yang lalu</h6>
                                 </div>
                             </div>
                           </div>
@@ -207,9 +228,16 @@
                         </div>
                       </div>
                     </div>
-                    <div class="d-grid gap-2 d-md-flex justify-content-end mb-10">
-                      <h6 class="fst-normal">7 hari yang lalu
-                    <button type="button" class="btn btn-primary btn-sm g-2">Lihat proyek</button></h6>
+                    <div class="d-flex align-items-center border-bebas  pt-3">
+                      <div
+                        class=" mb-3 d-flex d-xl-none align-items-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZMWO6A0Vs3KdkKrjvQj7YylmKcp3gkLMNkba0ZpoJ9hr5kuo9M_5GiVxfMW1LD9KCmY&usqp=CAU" class="img-thumbnail rounded-circle w-25"/>
+                        <div class="d-block mt-2 ms-1">Pharita</div>
+                      </div>
+                    <div class="d-flex w-100 d-md-flex align-items-center justify-content-end mb-10">
+                      <h6 class="fst-normal d-none d-xl-block me-1">7 hari yang lalu</h6>
+                    <button type="button" class="btn btn-primary btn-sm g-2">Lihat proyek</button>
+                  </div>
                   </div>
                   </div>
                 </div>
@@ -217,12 +245,12 @@
 
                  <!--Item 4-->
                  <div class="mx-auto mt-md-4">
-                  <div class="shadow p-3 mb-5 mt-5 bg-body-light rounded">
+                  <div class="shadow p-4 mb-5 mt-5 bg-body-light rounded">
                     <div class="row justify-content-between align-items-start">
                       <div
-                        class="col-12 col-sm-4 col-md-3 col-lg-2 left text-center mb-3 d-none d-md-block">
-                        <img src="https://play-lh.googleusercontent.com/ulMAlLTgPLQwx9gCsQgCp2_YUrOep6Nx_s6BWxQhqwxCPMtVQ9EO37vrw6v8qtwtN3c=w240-h480-rw" class="img-thumbnail rounded-circle w-50"/>
-                        <div class="d-block mt-2">rosie</div>
+                        class="col-12 col-sm-4 col-md-3 col-lg-2 left text-center mb-3 d-none d-xl-block">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZMWO6A0Vs3KdkKrjvQj7YylmKcp3gkLMNkba0ZpoJ9hr5kuo9M_5GiVxfMW1LD9KCmY&usqp=CAU" class="img-thumbnail rounded-circle w-50"/>
+                        <div class="d-block mt-2">Pharita</div>
                       </div>
                       <div class="col-12 col-md-9 col-lg-10 right">
                         <div class="row">
@@ -230,14 +258,15 @@
                             class="col-12 col-lg-7 ps-0 mb-2 d-flex align-items-center justify-content-between">
                             <div>
                               <h6 class="text-primary fw-semi">Pengerjaan Tugas Kuliah</h6>
-                              <p class="d-block fw-semibold">Anggaran Rp 20.000 - Rp 100.000</p>
+                              <p class="d-block fw-semibold">Anggaran Rp 10.000 - Rp 100.000</p>
                               <p class="fw-normal">Menerima pembuatan makalah, ppt dan lainnya</p>
                               <span class="badge text-bg-secondary">Makalah</span>
                               <span class="badge text-bg-secondary">Artikel</span>
                               <span class="badge text-bg-secondary">PPT</span>
                               <span class="badge text-bg-secondary">Karya Tulis Ilmiah</span>
-                              <div class="class align-items-start mt-5 fst-normal"> Status:
-                                <span class="badge rounded-pill text-bg-success align-items-start">Open</span>
+                              <div class="class d-flex justify-content-between align-items-start mt-5 fst-normal"> 
+                                <div>Status: <span class="badge rounded-pill text-bg-success align-items-start">Open</span></div>
+                                <h6 class="fst-normal d-block d-xl-none">7 hari yang lalu</h6>
                                 </div>
                             </div>
                           </div>
@@ -251,9 +280,16 @@
                         </div>
                       </div>
                     </div>
-                    <div class="d-grid gap-2 d-md-flex justify-content-end mb-10">
-                      <h6 class="fst-normal">7 hari yang lalu
-                    <button type="button" class="btn btn-primary btn-sm g-2">Lihat proyek</button></h6>
+                    <div class="d-flex align-items-center border-bebas  pt-3">
+                      <div
+                        class=" mb-3 d-flex d-xl-none align-items-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZMWO6A0Vs3KdkKrjvQj7YylmKcp3gkLMNkba0ZpoJ9hr5kuo9M_5GiVxfMW1LD9KCmY&usqp=CAU" class="img-thumbnail rounded-circle w-25"/>
+                        <div class="d-block mt-2 ms-1">Pharita</div>
+                      </div>
+                    <div class="d-flex w-100 d-md-flex align-items-center justify-content-end mb-10">
+                      <h6 class="fst-normal d-none d-xl-block me-1">7 hari yang lalu</h6>
+                    <button type="button" class="btn btn-primary btn-sm g-2">Lihat proyek</button>
+                  </div>
                   </div>
                   </div>
                 </div>
@@ -261,12 +297,12 @@
 
                  <!--Item 5-->
                  <div class="mx-auto mt-md-4">
-                  <div class="shadow p-3 mb-5 mt-5 bg-body-light rounded">
+                  <div class="shadow p-4 mb-5 mt-5 bg-body-light rounded">
                     <div class="row justify-content-between align-items-start">
                       <div
-                        class="col-12 col-sm-4 col-md-3 col-lg-2 left text-center mb-3 d-none d-md-block">
-                        <img src="https://turnedin.id/images/default.jpeg" class="img-thumbnail rounded-circle w-50"/>
-                        <div class="d-block mt-2">Siti jennie</div>
+                        class="col-12 col-sm-4 col-md-3 col-lg-2 left text-center mb-3 d-none d-xl-block">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZMWO6A0Vs3KdkKrjvQj7YylmKcp3gkLMNkba0ZpoJ9hr5kuo9M_5GiVxfMW1LD9KCmY&usqp=CAU" class="img-thumbnail rounded-circle w-50"/>
+                        <div class="d-block mt-2">Pharita</div>
                       </div>
                       <div class="col-12 col-md-9 col-lg-10 right">
                         <div class="row">
@@ -274,14 +310,15 @@
                             class="col-12 col-lg-7 ps-0 mb-2 d-flex align-items-center justify-content-between">
                             <div>
                               <h6 class="text-primary fw-semi">Pengerjaan Tugas Kuliah</h6>
-                              <p class="d-block fw-semibold">Anggaran Rp 20.000 - Rp 100.000</p>
+                              <p class="d-block fw-semibold">Anggaran Rp 10.000 - Rp 100.000</p>
                               <p class="fw-normal">Menerima pembuatan makalah, ppt dan lainnya</p>
                               <span class="badge text-bg-secondary">Makalah</span>
                               <span class="badge text-bg-secondary">Artikel</span>
                               <span class="badge text-bg-secondary">PPT</span>
                               <span class="badge text-bg-secondary">Karya Tulis Ilmiah</span>
-                              <div class="class align-items-start mt-5 fst-normal"> Status:
-                                <span class="badge rounded-pill text-bg-success align-items-start">Open</span>
+                              <div class="class d-flex justify-content-between align-items-start mt-5 fst-normal"> 
+                                <div>Status: <span class="badge rounded-pill text-bg-success align-items-start">Open</span></div>
+                                <h6 class="fst-normal d-block d-xl-none">7 hari yang lalu</h6>
                                 </div>
                             </div>
                           </div>
@@ -295,9 +332,16 @@
                         </div>
                       </div>
                     </div>
-                    <div class="d-grid gap-2 d-md-flex justify-content-end mb-10">
-                      <h6 class="fst-normal">7 hari yang lalu
-                    <button type="button" class="btn btn-primary btn-sm g-2">Lihat proyek</button></h6>
+                    <div class="d-flex align-items-center border-bebas  pt-3">
+                      <div
+                        class=" mb-3 d-flex d-xl-none align-items-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZMWO6A0Vs3KdkKrjvQj7YylmKcp3gkLMNkba0ZpoJ9hr5kuo9M_5GiVxfMW1LD9KCmY&usqp=CAU" class="img-thumbnail rounded-circle w-25"/>
+                        <div class="d-block mt-2 ms-1">Pharita</div>
+                      </div>
+                    <div class="d-flex w-100 d-md-flex align-items-center justify-content-end mb-10">
+                      <h6 class="fst-normal d-none d-xl-block me-1">7 hari yang lalu</h6>
+                    <button type="button" class="btn btn-primary btn-sm g-2">Lihat proyek</button>
+                  </div>
                   </div>
                   </div>
                 </div>
@@ -305,12 +349,12 @@
 
                  <!--Item 6-->
                  <div class="mx-auto mt-md-4">
-                  <div class="shadow p-3 mb-5 mt-5 bg-body-light rounded">
+                  <div class="shadow p-4 mb-5 mt-5 bg-body-light rounded">
                     <div class="row justify-content-between align-items-start">
                       <div
-                        class="col-12 col-sm-4 col-md-3 col-lg-2 left text-center mb-3 d-none d-md-block">
-                        <img src="https://turnedin.id/images/default.jpeg" class="img-thumbnail rounded-circle w-50"/>
-                        <div class="d-block mt-2">Diah</div>
+                        class="col-12 col-sm-4 col-md-3 col-lg-2 left text-center mb-3 d-none d-xl-block">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZMWO6A0Vs3KdkKrjvQj7YylmKcp3gkLMNkba0ZpoJ9hr5kuo9M_5GiVxfMW1LD9KCmY&usqp=CAU" class="img-thumbnail rounded-circle w-50"/>
+                        <div class="d-block mt-2">Pharita</div>
                       </div>
                       <div class="col-12 col-md-9 col-lg-10 right">
                         <div class="row">
@@ -318,14 +362,15 @@
                             class="col-12 col-lg-7 ps-0 mb-2 d-flex align-items-center justify-content-between">
                             <div>
                               <h6 class="text-primary fw-semi">Pengerjaan Tugas Kuliah</h6>
-                              <p class="d-block fw-semibold">Anggaran Rp 20.000 - Rp 100.000</p>
+                              <p class="d-block fw-semibold">Anggaran Rp 10.000 - Rp 100.000</p>
                               <p class="fw-normal">Menerima pembuatan makalah, ppt dan lainnya</p>
                               <span class="badge text-bg-secondary">Makalah</span>
                               <span class="badge text-bg-secondary">Artikel</span>
                               <span class="badge text-bg-secondary">PPT</span>
                               <span class="badge text-bg-secondary">Karya Tulis Ilmiah</span>
-                              <div class="class align-items-start mt-5 fst-normal"> Status:
-                                <span class="badge rounded-pill text-bg-success align-items-start">Open</span>
+                              <div class="class d-flex justify-content-between align-items-start mt-5 fst-normal"> 
+                                <div>Status: <span class="badge rounded-pill text-bg-success align-items-start">Open</span></div>
+                                <h6 class="fst-normal d-block d-xl-none">7 hari yang lalu</h6>
                                 </div>
                             </div>
                           </div>
@@ -339,9 +384,16 @@
                         </div>
                       </div>
                     </div>
-                    <div class="d-grid gap-2 d-md-flex justify-content-end mb-10">
-                      <h6 class="fst-normal">7 hari yang lalu
-                    <button type="button" class="btn btn-primary btn-sm g-2">Lihat proyek</button></h6>
+                    <div class="d-flex align-items-center border-bebas  pt-3">
+                      <div
+                        class=" mb-3 d-flex d-xl-none align-items-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZMWO6A0Vs3KdkKrjvQj7YylmKcp3gkLMNkba0ZpoJ9hr5kuo9M_5GiVxfMW1LD9KCmY&usqp=CAU" class="img-thumbnail rounded-circle w-25"/>
+                        <div class="d-block mt-2 ms-1">Pharita</div>
+                      </div>
+                    <div class="d-flex w-100 d-md-flex align-items-center justify-content-end mb-10">
+                      <h6 class="fst-normal d-none d-xl-block me-1">7 hari yang lalu</h6>
+                    <button type="button" class="btn btn-primary btn-sm g-2">Lihat proyek</button>
+                  </div>
                   </div>
                   </div>
                 </div>
